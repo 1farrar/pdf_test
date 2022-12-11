@@ -3,6 +3,8 @@ import WebViewer from "@pdftron/webviewer";
 
 // https://pdf.ac/C1NoX
 
+// "https://pdftron.s3.amazonaws.com/downloads/pl/webviewer-demo.pdf"
+
 const App = () => {
   const viewer = useRef(null);
 
@@ -11,7 +13,7 @@ const App = () => {
       {
         path: "lib",
         initialDoc:
-          "https://pdftron.s3.amazonaws.com/downloads/pl/webviewer-demo.pdf",
+          "https://carleton.ca/financialservices/wp-content/uploads/sample_signature_form_carleton_u_v5.pdf",
       },
       viewer.current
     ).then((instance) => {});
